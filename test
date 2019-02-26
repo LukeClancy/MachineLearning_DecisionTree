@@ -1,0 +1,7 @@
+file = open('har.csv', 'r')
+line = file.readline()
+while line != None and line != '':
+	line.split(',')
+	print("val: " + str(line[84]) + ", stnd:" + str(line[-1]))
+	line = file.readline()
+
